@@ -46,7 +46,7 @@
     },
 
     methods: {
-      
+
       //method "store"
       async store(e) {
         e.preventDefault()
@@ -57,18 +57,18 @@
             //data yang dikirim ke server
             title:   this.post.title,
             content: this.post.content
-            
+
           })
           .then(() => {
-            
+
             //redirect ke route "post"
             this.$router.push({
-              name: 'post'
+              name: 'user'
             })
 
           })
           .catch(error => {
-            //assign validation  
+            //assign validation
             this.validation = error.response.data
           })
       }

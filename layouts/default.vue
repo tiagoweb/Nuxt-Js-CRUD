@@ -1,17 +1,40 @@
 <template>
   <div>
-
     <div>
-      <b-navbar toggleable="lg" type="light" variant="light" class="shadow-md" fixed="top">
-        <b-navbar-brand to="/">NUXT CRUD</b-navbar-brand>
+      <b-navbar
+        toggleable="lg"
+        type="dark"
+        variant="dark"
+        class="shadow-md nav"
+        fixed="top"
+      >
+        <b-navbar-brand to="/"
+          ><img src="img/logocc.png" class="logocc"
+        /></b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav>
-            <b-nav-item to="/post">POST</b-nav-item>
-            <b-nav-item href="https://santrikoding.com/ebook">EBOOK</b-nav-item>
-            <b-nav-item href="https://santrikoding.com/kelas">COURSE</b-nav-item>
+            <div>
+              <b-dropdown id="dropdown-1" text="Relatórios" class="m-md-2">
+                <b-dropdown-item to="/qtdInscritosPorComunidade"
+                  >Qtd de inscritos por Comunidade</b-dropdown-item
+                >
+
+                <b-dropdown-item to="/qtdInscritosPorRegiao"
+                  >Qtd de inscritos por Região</b-dropdown-item
+                >
+
+                <b-dropdown-item to="/qtdInscritosPorComunidadePorPrograma"
+                  >Qtd de inscritos por Comunidade e Programa</b-dropdown-item
+                >
+
+                <b-dropdown-item to="/alunosInscritos"
+                  >Alunos inscritos</b-dropdown-item
+                >
+              </b-dropdown>
+            </div>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -22,10 +45,18 @@
 </template>
 
 <style>
-body{
-  background-color: lightgray;
+.nav {
+  background-color: #092346!important;
+}
+body {
+  background-color: #313943;
 }
 .mt-5 {
-  margin-top: 100px!important;
+  margin-top: 120px !important;
+}
+
+
+.logocc {
+  height: 80px;
 }
 </style>

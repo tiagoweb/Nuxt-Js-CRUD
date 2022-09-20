@@ -69,7 +69,7 @@
 
           })
           .then(() => {
-            
+
             //redirect ke route "post"
             this.$router.push({
               name: 'post'
@@ -78,7 +78,7 @@
           })
           .catch(error => {
 
-            //assign error validasi  
+            //assign error validasi
             this.validation = error.response.data
           })
       }

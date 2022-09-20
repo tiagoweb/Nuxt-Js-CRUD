@@ -13,7 +13,10 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
-  },
-  "devDependencies": {}
+    "gridjs": "^5.1.0",
+    "nuxt": "^2.15.3",
+    "vue-currency-filter": "^5.2.0",
+    "vue-good-table": "^2.21.11",
+    "vue2-filters": "^0.14.0"
+  }
 }
